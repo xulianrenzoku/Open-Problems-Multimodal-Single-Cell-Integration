@@ -42,6 +42,7 @@
 ---
 ### Discussion
 Below are things that I learned:
+
 **Multiome**
 - It is great to learn techniques of data compression since it is not realistic to load a gigantic data file that eats up all the RAMs. After transforming data frames with a lot of zeroes into sparse matrices, I also learned how to set up dataloaders with `SparseDataset` with setting up custom function for the `collate_fn` parameter in `DataLoader`.
 - Using one cycle policy as learning rate scheduler could lead to faster convergence. It may not lead to top solutions in competitions, but I can see this being a super useful technique in work settings. 
@@ -52,6 +53,7 @@ Below are things that I learned:
 - When going through notebooks of benchmark models on Kaggle, I noticed that people would standardize targets before modeling. I was skeptical at first since I assumed modeling against the standardized targets would hurt the correlation score with the original targets. However, through experiments, it seems such a procedure actually led to better results.
 
 Things I wished I could do for improvement:
+
 **Multiome**
 - In the later stage of the competition, I was more focused on the CITEseq task. If given more time, I would do k-fold on the multiome part.
 - Many fellow Kagglers reduced dimensions not only on inputs but also on targets, and reversed back to 23,418 dimensions after training. I probably should try this method in retrospect, since it would definitely speed up the training process and probably lead to better results. 
